@@ -9,20 +9,38 @@ document.addEventListener("DOMContentLoaded", function () {
             h1.textContent = '';
         } else {
         h1.textContent = select.value;
-        addDays(select.value);
+        getDays(select.value);
         }
     })
 
     
 
-    function addDays(selectedMonth) {
+    function getDays(selectedMonth) {
         let days = 0;
-        if (selectedMonth === 'January') {
-            days = 31;
-        } else if (selectedMonth === 'February') {
-            days = 28;
-        } else {
-            days = 0;
+        switch (selectedMonth) {
+
+            case 'January':
+            case 'March':
+            case 'May':
+            case 'July':
+            case 'August':
+            case 'October':
+            case 'December':
+                days = 31;
+                break;
+            case 'April':
+            case 'June':
+            case 'September':
+            case 'November':
+                days = 30;
+                break;
+            case 'February':
+                days = 28;
+                break;
+
+            default:
+                days = 0;
+                // must define a function to clear the panel 
         }
         appendDays(days);
     }
