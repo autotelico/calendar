@@ -1,0 +1,15 @@
+body {
+    background: plum;
+}
+
+.container {
+    border: 5px solid;
+    background: skyblue;
+    height: 40vh;
+    width: 50vw;
+    margin: 5vh auto;
+}
+
+select {
+    margin-left: 1.2em;
+}
