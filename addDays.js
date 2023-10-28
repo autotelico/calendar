@@ -5,8 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const daysOfTheMonth = document.querySelector('#days-of-the-month');
 
     select.addEventListener('change', () => {
+        if (select.value === '-Select-') {
+            h1.textContent = '';
+        } else {
         h1.textContent = select.value;
         addDays(select.value);
+        }
     })
 
     

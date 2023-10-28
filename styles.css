@@ -18,9 +18,12 @@ body {
 }
 
 .days-container {
-    border: purple;
-    height: 200px;
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: purple;
+    height: 500px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -35,10 +38,10 @@ select {
 
 ul {
     list-style-type: none;
-    display: inline;
     gap: 5px;
 }
 
 li {
     background: blue;
+    border: 2px solid black;
 }
