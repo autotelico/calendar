@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const 
-    const month = document.querySelector('select');
+    const h1 = document.querySelector('h1');
+    const select = document.querySelector('select');
 
-
+    select.addEventListener('change', () => {
+        h1.textContent = select.value;
+    })
 })

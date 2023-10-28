@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
 body {
     background: plum;
 }
@@ -8,8 +14,14 @@ body {
     height: 40vh;
     width: 50vw;
     margin: 5vh auto;
+    padding: 1em;
+}
+
+.days-container {
+    border: #0000ff;
 }
 
 select {
-    margin-left: 1.2em;
+    background: peachpuff;
+    font-weight: bold;
 }
