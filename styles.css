@@ -18,10 +18,27 @@ body {
 }
 
 .days-container {
-    border: #0000ff;
+    border: purple;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
 }
 
 select {
     background: peachpuff;
     font-weight: bold;
+}
+
+#days-of-the-month {
+    border: red;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    gap: 5px;
+}
+
+li {
+    background: blue;
 }
