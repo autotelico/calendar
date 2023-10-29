@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     select.addEventListener('change', () => {
         if (select.value === '-Select-') {
-            h1.textContent = '';
+            h1.textContent = '(You actually have to select a month!)';
+            h1.style.fontStyle = 'italic';
         } else {
+        h1.style.fontStyle = '';
         h1.textContent = select.value;
         getDays(select.value);
         }
@@ -18,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function getDays(selectedMonth) {
         let days = 0;
         switch (selectedMonth) {
-
             case 'January':
             case 'March':
             case 'May':
@@ -37,23 +38,29 @@ document.addEventListener("DOMContentLoaded", function () {
             case 'February':
                 days = 28;
                 break;
-
             default:
                 days = 0;
-                // must define a function to clear the panel 
         }
         appendDays(days);
     }
 
-    function appendDays(numDays) {
+    function appendDays(days) { // would work with any name between the ()
         daysOfTheMonth.innerHTML = '';
+            for (let i = 1; i <= days; i++) {
+                let listDay = document.createElement('li');
+                listDay.textContent = i;
+                daysOfTheMonth.appendChild(listDay);
+            }
+            if (days === 0) {
+                clearDays();
+            }
+    }
+    
 
-        for (let i = 1; i <= numDays; i++) {
-            let listDay = document.createElement('li');
-            listDay.textContent = i;
-            daysOfTheMonth.appendChild(listDay);
+    function clearDays() {
+            while (daysOfTheMonth.firstChild) {
+                daysOfTheMonth.removeChild(daysOfTheMonth.firstChild);
+            }
         }
     }
-
-
-})
+)

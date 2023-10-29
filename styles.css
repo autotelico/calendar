@@ -13,10 +13,16 @@ body {
     z-index: -10;
 } */
 
+h1#title-header {
+    text-align: center;
+    font-size: 4em;
+    text-decoration: underline;
+}
+
 .container {
     border: 5px solid;
     background: skyblue;
-    height: 40vh;
+    height: 50vh;
     width: 50vw;
     margin: 5vh auto;
     padding: 1em;
@@ -24,12 +30,9 @@ body {
 }
 
 .days-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: purple;
-    height: 500px;
-    width: 800px;
+    height: 300px;
+    width: 850px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -47,10 +50,17 @@ select {
 ul {
     list-style-type: none;
     gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 li {
-    display: inline-block;
     background: blue;
     border: 2px solid black;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
