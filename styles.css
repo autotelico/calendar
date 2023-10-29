@@ -5,23 +5,29 @@
 }
 
 body {
-    background: plum;
+    background: #071E22;
 }
 
 /* .video-container {
     position: relative;
     z-index: -10;
 } */
+h1,
+select,
+li {
+    color: #071E22;
+}
 
 h1#title-header {
     text-align: center;
     font-size: 4em;
     text-decoration: underline;
+    color: #F4C095;
 }
 
 .container {
     border: 5px solid;
-    background: skyblue;
+    background: #1D7874;
     height: 50vh;
     width: 50vw;
     margin: 5vh auto;
@@ -30,7 +36,7 @@ h1#title-header {
 }
 
 .days-container {
-    background: purple;
+    background: #679289;
     height: 30vh;
     width: 47.7vw;
     margin: 0 auto;
@@ -56,7 +62,7 @@ ul {
 }
 
 li {
-    background: blue;
+    background: #EE2E31;
     border: 2px solid black;
     height: 40px;
     width: 100px;
