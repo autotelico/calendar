@@ -8,10 +8,6 @@ body {
     background: #071E22;
 }
 
-/* .video-container {
-    position: relative;
-    z-index: -10;
-} */
 h1,
 select,
 li {
@@ -31,17 +27,25 @@ h1#title-header {
     height: 50vh;
     width: 50vw;
     margin: 5vh auto;
-    padding: 1em;
- 
+    padding: 1em 1em 0 1em;
+    overflow: scroll;
 }
 
 .days-container {
     background: #679289;
-    height: 30vh;
-    width: 47.7vw;
+    height: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding: 10px;
     position: relative;
+    bottom: 0;
     z-index: 1;
+}
+
+@media (min-width: 650px) {
+    .container {
+        min-width: 550px;
+    }
 }
 
 select {
