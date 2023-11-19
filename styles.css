@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
+:root {
+    --body-color: #071E22; 
+}
+
+
 * {
     font-family: 'Roboto Slab', serif;
 }
 
 body {
-    background: #071E22;
+    background: var(--body-color);
 }
 
 h1,
@@ -80,10 +85,15 @@ li {
 @media screen and (max-width: 425px) {
     .container {
         width: 300px;
-        height: 1100px;
+        height: 600px;
     }
 
     .days-container {
         height: 80%;
+    }
+
+    #days-of-the-month {
+        height: 40%;
+        width: 50%;
     }
 }
