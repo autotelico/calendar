@@ -24,28 +24,21 @@ h1#title-header {
 .container {
     border: 5px solid;
     background: #1D7874;
-    height: 50vh;
-    width: 50vw;
+    height: 500px;
+    width: 800px;
     margin: 5vh auto;
     padding: 1em 1em 0 1em;
-    overflow: scroll;
 }
 
 .days-container {
     background: #679289;
-    height: 80%;
+    height: 70%;
     width: 90%;
     margin: 0 auto;
     padding: 10px;
     position: relative;
     bottom: 0;
     z-index: 1;
-}
-
-@media (min-width: 650px) {
-    .container {
-        min-width: 550px;
-    }
 }
 
 select {
@@ -73,4 +66,15 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 300px;
+        height: 1100px;
+    }
+
+    .days-container {
+        height: 80%;
+    }
 }
