@@ -1,99 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-
-:root {
-    --body-color: #071E22; 
-}
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 * {
-    font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 body {
-    background: var(--body-color);
+  background: #071E22;
 }
 
 h1,
 select,
 li {
-    color: #071E22;
+  color: #071E22;
 }
 
 h1#title-header {
-    text-align: center;
-    font-size: 4em;
-    text-decoration: underline;
-    color: #F4C095;
+  text-align: center;
+  font-size: 4em;
+  text-decoration: underline;
+  color: #F4C095;
 }
 
 .container {
-    border: 5px solid;
-    background: #1D7874;
-    height: 500px;
-    width: 800px;
-    margin: 5vh auto;
-    padding: 1em 1em 0 1em;
+  border: 5px solid;
+  background: #1D7874;
+  height: 500px;
+  width: 800px;
+  margin: 5vh auto;
+  padding: 1em 1em 0 1em;
 }
 
 .days-container {
-    background: #679289;
-    height: 70%;
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    z-index: 1;
+  background: #679289;
+  height: 70%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  z-index: 1;
+  overflow: auto;
 }
 
 select {
-    background: peachpuff;
-    font-weight: bold;
+  background: peachpuff;
+  font-weight: bold;
 }
 
 #days-of-the-month {
-    border: red;
+  border: red;
 }
 
 ul {
-    list-style-type: none;
-    gap: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
+  list-style-type: none;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 li {
-    background: #EE2E31;
-    border: 2px solid black;
-    height: 40px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #EE2E31;
+  border: 2px solid black;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 800px) {
-    .container {
-        width: 400px;
-        height: 900px;
-    }
+  .container {
+    width: 400px;
+    height: 900px;
+  }
 }
-
-
 /* for mobiles L to S */
 @media screen and (max-width: 425px) {
-    .container {
-        width: 200px;
-        height: 600px;
-    }
-
-    .days-container {
-        height: 80%;
-    }
-
-    #days-of-the-month {
-        height: 40%;
-        width: 50%;
-    }
+  .container {
+    width: 200px;
+    height: 600px;
+  }
+  .days-container {
+    height: 80%;
+  }
+  #days-of-the-month {
+    height: 40%;
+    width: 50%;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
