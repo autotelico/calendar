@@ -14,7 +14,7 @@ option {
 }
 
 body {
-  background-color: #071E22;
+  background-color: #071E22 !important;
 }
 
 h1#title-header {
