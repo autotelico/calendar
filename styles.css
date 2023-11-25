@@ -3,14 +3,18 @@
   font-family: "Roboto Slab", serif;
 }
 
-body {
-  background: #071E22;
-}
-
 h1,
 select,
 option {
   color: #071E22;
+}
+
+#container {
+  background: #1D7874;
+}
+
+body {
+  background-color: #071E22;
 }
 
 h1#title-header {
@@ -21,12 +25,7 @@ h1#title-header {
 }
 
 .container {
-  border: 5px solid;
   background: #1D7874;
-  height: 500px;
-  width: 800px;
-  margin: 5vh auto;
-  padding: 1em 1em 0 1em;
 }
 
 .days-container {
