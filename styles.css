@@ -9,7 +9,7 @@ body {
 
 h1,
 select,
-li {
+option {
   color: #071E22;
 }
 
