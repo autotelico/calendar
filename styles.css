@@ -70,17 +70,19 @@ li {
   }
 }
 /* for mobiles L to S */
-@media screen and (max-width: 425px) {
+@media only screen and (max-width: 320px) {
   .container {
     width: 200px;
     height: 600px;
   }
   .days-container {
     height: 80%;
+    display: grid;
+    grid-template-columns: repeaet(2, 1fr);
   }
-  #days-of-the-month {
-    height: 40%;
-    width: 50%;
+  li {
+    min-height: 40px;
+    min-width: 60px;
   }
 }
 
